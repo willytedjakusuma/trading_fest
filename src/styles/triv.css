@@ -89,7 +89,6 @@ section.leaderboard {
 
 .periode-kompetisi {
   font-family: Montserrat;
-  font-size: 20px;
   font-weight: 500;
   font-stretch: normal;
   font-style: italic;
@@ -101,25 +100,21 @@ section.leaderboard {
 
 .semuabisamenang-reward {
   font-family: Montserrat;
-  font-size: 36px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.53;
   letter-spacing: -0.36px;
-  text-align: left;
   color: #fff;
 }
 
 .bukan-dari-trading-volume {
   font-family: Montserrat;
-  font-size: 28px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.29;
   letter-spacing: -0.28px;
-  text-align: left;
   color: #a4acbe;
 }
 
@@ -134,7 +129,6 @@ section.leaderboard {
 .triv-quest-reward-title  {
   text-shadow: 8.1px 5.9px 0 rgba(0, 0, 0, 0.4);
   font-family: Montserrat;
-  font-size: 45px;
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
@@ -195,10 +189,7 @@ section.side-quest-bg  {
   font-style: normal;
   line-height: 1.53;
   letter-spacing: -0.36px;
-  text-align: left;
   color: #fff;
-  padding-left: 83px;
-  padding-top: 120px;
 }
 
 .cukup-memiliki-akun-triv {
@@ -209,10 +200,7 @@ section.side-quest-bg  {
   font-style: normal;
   line-height: 1.29;
   letter-spacing: -0.28px;
-  text-align: left;
   color: #fff;
-  padding-left: 83px;
-  padding-top: 10px;
 }
 
 .time-font {
@@ -230,7 +218,6 @@ section.side-quest-bg  {
 
 .time-event {
   background: #161c2a;
-  padding: 30px;
   color: #fff;
   border-radius: 20px;
   font-size: 30px;

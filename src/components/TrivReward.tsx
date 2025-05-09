@@ -1,127 +1,59 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import RewardItem from "./RewardItem";
 
 export default function TrivReward() {
+  const rewards = [
+    { src: "/images/winner_1_prize.png", title: "Motor Vario" },
+    { src: "/images/winner_2_prize.png", title: "Macbook Air M1 2020" },
+    { src: "/images/winner_3_prize.png", title: "Samsung Galaxy Tab S7+" },
+    { src: "/images/winner_4_prize.png", title: "Samsung S22 5G" },
+    { src: "/images/winner_5_prize.png", title: "Samsung S21 FE 5G" },
+    { src: "/images/winner_6_prize.png", title: "Samsung S20 FE" },
+  ];
+
   return(
-    <section className="triv-reward">
-      <div className="container mx-auto px-2">
-        <div className="row grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div className="relative">
-            <div className="semuabisamenang-reward">
-              <span>#SemuaBisaMenang karena semakin banyak kamu trading semakin banyak hadiah yang bisa kamu dapatkan ! </span>
-            </div>
-            <div className="p bukan-dari-trading-volume">
-              <span>Mulai trading hanya dengan 50rb rupiah di Triv dan dapatkan hadiahnya.</span>
-            </div>
-          </div>
-          <div className="relative">
+    <section className="triv-reward py-8">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center">
+          <div className="order-1 md:order-3 relative w-full h-64 md:h-[500px]">
             <Image
               src="/images/prize_combined.png"
               alt="Triv Reward"
-              layout="responsive"
-              width={500}
-              height={600}
+              fill
+              className="object-contain"
+              unoptimized
             />
             <div className="pb-5"></div>
           </div>
-          <div className="md:col-span-2 pb-5"></div>
-          <div className="md:col-span-2 shadow-bottom w-full h-[40px]"></div>
+          <div className="order-2 md:order-1">
+            <div className="text-base semuabisamenang-reward text-2xl md:text-[36px]  text-center md:text-left">
+             #SemuaBisaMenang karena semakin banyak kamu trading semakin banyak hadiah yang bisa kamu dapatkan !
+            </div>
+            <div className="bukan-dari-trading-volume text-2xl md:text-[28px]  text-center md:text-left">
+              Mulai trading hanya dengan 50rb rupiah di Triv dan dapatkan hadiahnya.
+            </div>
+          </div>
+          <div className="order-5 md:col-span-2 pb-5"></div>
+          <div className="order-6 md:col-span-2 shadow-bottom w-full h-[40px]"></div>
         </div>
 
-        <div className="row grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-          <div className="col-span-3">
-            <div className="triv-quest-reward-title py-8 text-center">
-              <span className="blue-underline">
-                TRIV QUEST REWARD
-              </span>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div className="sm:grid-cols-2 md:col-span-3">
+            <div className="triv-quest-reward-title py-8 text-3xl md:text-[45px]  text-center">
+              <span className="blue-underline">TRIV QUEST REWARD</span>
             </div>
           </div>
-          <div>
-            <Image
-              src="/images/winner_1_prize.png"
-              alt="Motor Vario"
-              layout="responsive"
-              width={260}
-              height={334}
-              className="max-h-[334px] mx-auto object-contain"
-            />
-            <div className="title-reward text-center">
-              <p>Motor Vario</p>
-            </div>
-          </div>
-          <div>
-          <Image
-              src="/images/winner_2_prize.png"
-              alt="Macbook Air M1 2020"
-              layout="responsive"
-              width={260}
-              height={334}
-              className="max-h-[334px] mx-auto object-contain"
-            />
-            <div className="title-reward text-center">
-              <p>Macbook Air M1 2020</p>
-            </div>
-          </div>
-          <div>
-            <Image
-              src="/images/winner_3_prize.png"
-              alt="Samsung Galaxy Tab S7+"
-              layout="responsive"
-              width={260}
-              height={334}
-              className="max-h-[334px] mx-auto object-contain"
-            />
-            <div className="title-reward text-center">
-              <p>Samsung Galaxy Tab S7+</p>
-            </div>
-          </div>
-          <div className="col-span-3"></div>
-          <div>
-            <Image
-              src="/images/winner_4_prize.png"
-              alt="Samsung S22 5G"
-              layout="responsive"
-              width={260}
-              height={334}
-              className="max-h-[334px] mx-auto object-contain"
-            />
-            <div className="title-reward text-center">
-              <p>Samsung S22 5G</p>
-            </div>
-          </div>
-          <div>
-            <Image
-              src="/images/winner_5_prize.png"
-              alt="Samsung S21 FE 5G"
-              layout="responsive"
-              width={260}
-              height={334}
-              className="max-h-[334px] mx-auto object-contain"
-            />
-            <div className="title-reward text-center">
-              <p>Samsung S21 FE 5G</p>
-            </div>
-          </div>
-          <div>
-            <Image
-              src="/images/winner_6_prize.png"
-              alt="Samsung S20 FE"
-              layout="responsive"
-              width={260}
-              height={334}
-              className="max-h-[334px] mx-auto object-contain"
-            />
-            <div className="title-reward text-center">
-              <p>Samsung S20 FE</p>
-            </div>
-          </div>
-          <div className="md:col-span-3 shadow-bottom w-full h-[40px]"></div>
+          {rewards.map((reward, index) => (
+            <RewardItem key={index} src={reward.src} title={reward.title} />
+          ))}
+
         </div>
 
-        <section className="side-quest-bg">
-          <div className="row grid grid-cols-1 md:grid-cols-2 gap-8 items-start side-quest-container flex flex-nowrap">
-            <div className="relative p-10">
+        <section className="side-quest-bg mt-10 mx-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start side-quest-container">
+            <div className="relative p-10 flex flex-col justify-between">
               <Link href="https://bit.ly/sidequestsubmission">
                 <div className="side-quest">
                   <div>SIDE QUEST</div>
@@ -134,21 +66,23 @@ export default function TrivReward() {
                 </div>
               </Link>
             </div>
-            <div className="relative overflow-visible translate-x-10">
-              <Image
-                src="/images/side_quest.png"
-                alt="Side Quest"
-                layout="responsive"
-                width={300}
-                height={400}
-              />
+            <div className="relative z-0 flex justify-center md:block">
+              <div className="w-60 h-60 md:absolute md:-top-10 md:right-0 md:w-[450px] md:h-[450px]">
+                <Image
+                  src="/images/side_quest.png"
+                  alt="Side Quest"
+                  layout="fill"
+                  objectFit="contain"
+                  className="object-contain md:-translate-y-14 md:translate-x-10"
+                />
+              </div>
             </div>
           </div>
         </section>
 
-        <section className="side-quest-bg mt-10">
-          <div className="row grid grid-cols-1 md:grid-cols-2 gap-8 items-start side-quest-container flex flex-nowrap">
-            <div className="relative p-10">
+        <section className="side-quest-bg mt-20 mx-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start side-quest-container">
+            <div className="relative p-10 flex flex-col justify-between">
               <div className="side-quest">
                 <div>WEEKLY QUEST JOURNEY</div>
               </div>
@@ -159,14 +93,16 @@ export default function TrivReward() {
                 <p className="font-extrabold">Total Hadiah 10 Juta + Triv Merch</p>
               </div>
             </div>
-            <div className="relative overflow-visible translate-x-10">
-              <Image
-                src="/images/weekly_quest_journey.png"
-                alt="Side Quest"
-                layout="responsive"
-                width={300}
-                height={400}
-              />
+            <div className="relative z-0 flex justify-center md:block">
+              <div className="w-60 h-60 md:absolute md:-top-10 md:right-0 md:w-[450px] md:h-[450px]">
+                <Image
+                  src="/images/weekly_quest_journey.png"
+                  alt="Side Quest"
+                  layout="fill"
+                  objectFit="contain"
+                  className="object-contain md:-translate-y-14 md:translate-x-10"
+                />
+              </div>
             </div>
           </div>
         </section>
