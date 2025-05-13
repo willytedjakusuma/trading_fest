@@ -144,7 +144,6 @@ section.leaderboard {
 
 .side-quest {
   font-family: Montserrat;
-  font-size: 40px;
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
@@ -156,7 +155,6 @@ section.leaderboard {
 
 .lihat-info-detail {
   font-family: Montserrat;
-  font-size: 28px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -198,7 +196,6 @@ section.side-quest-bg  {
 
 .time-font {
   font-family: Montserrat;
-  font-size: 36px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -219,8 +216,6 @@ section.side-quest-bg  {
 
 .percent {
   color: #58bd7d;
-  padding-bottom: 50px;
-  font-size: 42px;
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
@@ -251,7 +246,6 @@ section.side-quest-bg  {
 .leaderboard-name {
   object-fit: contain;
   font-family: Montserrat;
-  font-size: 32px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;

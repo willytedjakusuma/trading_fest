@@ -14,7 +14,7 @@ export default function TrivReward() {
   ];
 
   return(
-    <section className="triv-reward py-8">
+    <section className="triv-reward py-1">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center">
           <div className="order-1 md:order-3 relative w-full h-64 md:h-[500px]">
@@ -48,17 +48,16 @@ export default function TrivReward() {
           {rewards.map((reward, index) => (
             <RewardItem key={index} src={reward.src} title={reward.title} />
           ))}
-
         </div>
 
-        <section className="side-quest-bg mt-10 mx-10">
+        <section className="side-quest-bg mt-5 mx-3 md:mt-10 md:mx-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start side-quest-container">
-            <div className="relative p-10 flex flex-col justify-between">
+            <div className="relative px-5 py-10 md:px-10 flex flex-col justify-between">
               <Link href="https://bit.ly/sidequestsubmission">
-                <div className="side-quest">
+                <div className="side-quest text-[27px] md:text-[40px]">
                   <div>SIDE QUEST</div>
                 </div>
-                <div className="lihat-info-detail">
+                <div className="lihat-info-detail text-[19px] md:text-[28px]">
                   <span>Klik untuk lihat info detail </span>
                   <div className="fa-solid fa-angle-right"></div>
                   <div>Juara Favorit</div>
@@ -80,13 +79,13 @@ export default function TrivReward() {
           </div>
         </section>
 
-        <section className="side-quest-bg mt-20 mx-10">
+        <section className="side-quest-bg mt-10 mx-3 md:mt-20 md:mx-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start side-quest-container">
-            <div className="relative p-10 flex flex-col justify-between">
-              <div className="side-quest">
+            <div className="relative px-5 py-10 md:px-10 md:py-10 flex flex-col justify-between">
+              <div className="side-quest side-quest text-[27px] md:text-[40px]">
                 <div>WEEKLY QUEST JOURNEY</div>
               </div>
-              <div className="lihat-info-detail">
+              <div className="lihat-info-detail text-[19px] md:text-[28px]">
                 <span>Updated every week !! </span>
                 <div>Juara Mingguan</div>
                 <div>Juara Favorit</div>
