@@ -37,13 +37,11 @@ section.leaderboard {
 
 .triv-trading-competition {
   font-family: Montserrat;
-  font-size: 60px;
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.6px;
-  text-align: left;
   color: #fff;
 }
 
@@ -52,7 +50,6 @@ section.leaderboard {
   border-radius: 4px;
   background-color: #3189c6;
   font-family: Montserrat;
-  font-size: 24.5px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -64,26 +61,22 @@ section.leaderboard {
 
 .semua-bisa-menang {
   font-family: Montserrat;
-  font-size: 24px;
   font-weight: bold;
   font-stretch: normal;
   font-style: italic;
   line-height: normal;
   letter-spacing: -0.24px;
-  text-align: center;
   color: #fff
 }
 
 .calling-all-investor {
   object-fit: contain;
   font-family: Montserrat;
-  font-size: 32px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.13;
   letter-spacing: -0.32px;
-  text-align: left;
   color: #fff;
 }
 

@@ -19,15 +19,15 @@ export default function TradingCompetition() {
               unoptimized
             />
           </div>
-          <div className="order-2 md:order-1 text-center md:text-left">
-            <div className="triv-trading-competition pb-8">
+          <div className="order-2 md:order-1 ">
+            <div className="triv-trading-competition pb-8 text-center md:text-left text-[46px] md:text-[60px]">
               <span>Triv Trading Competition</span>
             </div>
-            <div>
+            <div className=" text-center md:text-left text-[26px] md:text-[32px]">
               <span className="calling-all-investor">Calling all investor and Trader Karena </span>
               <span className="semua-bisa-menang">#SemuaBisaMenang</span>
             </div>
-            <DaftarSekarangButton href="" className="">
+            <DaftarSekarangButton href="" className="text-[18px] md:text-[24.5px]">
               Daftar Sekarang
             </DaftarSekarangButton>
             <div className="periode-kompetisi">
