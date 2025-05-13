@@ -28,7 +28,7 @@ export default function TrivReward() {
             <div className="pb-5"></div>
           </div>
           <div className="order-2 md:order-1">
-            <div className="text-base semuabisamenang-reward text-2xl md:text-[36px]  text-center md:text-left">
+            <div className="semuabisamenang-reward text-[23px] md:text-[36px]  text-center md:text-left">
              #SemuaBisaMenang karena semakin banyak kamu trading semakin banyak hadiah yang bisa kamu dapatkan !
             </div>
             <div className="bukan-dari-trading-volume text-2xl md:text-[28px]  text-center md:text-left">
