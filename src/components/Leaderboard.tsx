@@ -28,21 +28,21 @@ export default function Leaderboard() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 leaderboard-name pt-24 md:pt-48">
-          <div className="order-1 md:order-2 card rank-1 md:mx-16 md:relative grid grid-cols-2 md:grid-cols-1 my-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 leaderboard-name px-4 pt-24 md:pt-48">
+          <div className="order-1 md:order-2 card flex rank-1 md:mx-16 md:relative grid grid-cols-2 md:grid-cols-1 my-4">
             <div>
               <Image
                 src="/images/rank_1.png"
                 alt="Rank 1"
                 width={80}
                 height={80}
-                className="rank !w-[80px] !h-[80px] my-12 md:!w-[166px] md:!h-[166px] md:-translate-y-36 md:overflow-visible"
+                className="rank !w-[80px] !h-[80px] my-4 md:!w-[166px] md:!h-[166px] md:-translate-y-36 md:overflow-visible"
                 unoptimized
               />
             </div>
-            <div className="pt-12">
-              <span className="leaderboard-name text-[24px] md:text-[32px]">Moch****</span>
-              <div className="percent text-[28px] md:text-[42px] pb-4 md:pb-[50px]">Rp 27,5m</div>
+            <div className="mt-6 md:mt-12 text-left md:text-center mr-3">
+              <span className="leaderboard-name  text-[26px] md:text-[32px]">Moch****</span>
+              <div className="percent text-[22px] md:text-[42px] pb-4 md:pb-[50px] mr-5">Rp 27,5m</div>
             </div>
           </div>
           <div className="order-2 md:order-1 card rank-2 md:mx-16 md:relative grid grid-cols-2 md:grid-cols-1 my-4 md:translate-y-16">
@@ -52,13 +52,13 @@ export default function Leaderboard() {
                 alt="Rank 2"
                 width={40}
                 height={40}
-                className="rank !w-[80px] !h-[80px] my-12 md:!w-[166px] md:!h-[166px] md:-translate-y-28 md:overflow-visible"
+                className="rank !w-[80px] !h-[80px] my-4 md:!w-[166px] md:!h-[166px] md:-translate-y-28 md:overflow-visible"
                 unoptimized
               />
             </div>
-            <div className="pt-12">
-              <span className="leaderboard-name leaderboard-name text-[24px] md:text-[32px]">Irna****</span>
-              <div className="percent text-[28px] md:text-[42px] pb-4 md:pb-[50px]">Rp 20,9m</div>
+            <div className="mt-6 md:mt-12 text-left md:text-center mr-3">
+              <span className="leaderboard-name text-left md:text-center text-[26px] md:text-[32px]">Irna****</span>
+              <div className="percent text-left md:text-center text-[22px] md:text-[42px] pb-4 md:pb-[50px]">Rp 20,9m</div>
             </div>
           </div>
           <div className="order-3 md:order-3 card rank-3 md:mx-16 md:relative grid grid-cols-2 md:grid-cols-1 my-4 md:translate-y-24">
@@ -68,13 +68,13 @@ export default function Leaderboard() {
                 alt="Rank 3"
                 width={40}
                 height={40}
-                className="rank !w-[80px] !h-[80px] my-12 md:!w-[166px] md:!h-[166px] md:-translate-y-28 md:overflow-visible"
+                className="rank !w-[80px] !h-[80px] my-4 md:!w-[166px] md:!h-[166px] md:-translate-y-28 md:overflow-visible"
                 unoptimized
               />
             </div>
-            <div className="pt-12">
-              <span className="leaderboard-name text-[28px] md:text-[42px] pb-4 md:pb-[50px]">linatul****</span>
-              <div className="percent text-[28px] md:text-[42px] pb-4 md:pb-[50px]">Rp 5,8m</div>
+            <div className="mt-6 md:mt-12 text-left md:text-center mr-3">
+              <span className="leaderboard-name text-[26px] md:text-[42px] pb-4 md:pb-[50px]">linatul****</span>
+              <div className="percent text-[22px] md:text-[42px] pb-4 md:pb-[50px]">Rp 5,8m</div>
             </div>
           </div>
         </div>
