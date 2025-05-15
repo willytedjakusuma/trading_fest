@@ -14,7 +14,6 @@ section.competition {
 
 section.triv-reward {
   background: #242424;
-  padding: 50px 0;
 }
 
 section.pendaftaran {
@@ -26,7 +25,7 @@ section.pendaftaran {
 }
 
 section.leaderboard {
-  background: #242424;
+  background: #515151;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -149,7 +148,6 @@ section.leaderboard {
   font-style: normal;
   line-height: 1.38;
   letter-spacing: -0.4px;
-  text-align: left;
   color: #fff;
 }
 
@@ -274,7 +272,6 @@ section.side-quest-bg  {
 
 .font-rules {
   font-family: Montserrat;
-  font-size: 24px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;

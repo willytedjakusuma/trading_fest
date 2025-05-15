@@ -5,7 +5,7 @@ import DaftarSekarangButton from "./DaftarSekarangButton";
 
 export default function TradingCompetition() {
   return (
-    <section className="competition py-8">
+    <section className="competition">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center">
           <div className="order-1 md:order-3 relative w-full">

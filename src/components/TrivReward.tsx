@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import RewardItem from "./RewardItem";
+import SideQuest from "./SideQuest";
 
 export default function TrivReward() {
   const rewards = [
@@ -14,10 +15,10 @@ export default function TrivReward() {
   ];
 
   return(
-    <section className="triv-reward py-1">
+    <section className="triv-reward py-[30px]">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center">
-          <div className="order-1 md:order-3 relative w-full h-64 md:h-[500px]">
+          <div className="order-1 md:order-3 relative w-full h-56 md:h-[500px]">
             <Image
               src="/images/prize_combined.png"
               alt="Triv Reward"
@@ -25,13 +26,12 @@ export default function TrivReward() {
               className="object-contain"
               unoptimized
             />
-            <div className="pb-5"></div>
           </div>
-          <div className="order-2 md:order-1">
-            <div className="semuabisamenang-reward text-[23px] md:text-[36px]  text-center md:text-left">
+          <div className="order-2 md:order-1 pb-10">
+            <div className="semuabisamenang-reward text-[24px] md:text-[36px]  text-center md:text-left">
              #SemuaBisaMenang karena semakin banyak kamu trading semakin banyak hadiah yang bisa kamu dapatkan !
             </div>
-            <div className="bukan-dari-trading-volume text-2xl md:text-[28px]  text-center md:text-left">
+            <div className="bukan-dari-trading-volume text-[28px] text-center md:text-left">
               Mulai trading hanya dengan 50rb rupiah di Triv dan dapatkan hadiahnya.
             </div>
           </div>
@@ -48,63 +48,28 @@ export default function TrivReward() {
           {rewards.map((reward, index) => (
             <RewardItem key={index} src={reward.src} title={reward.title} />
           ))}
+          <div className="order-6 md:col-span-2 shadow-bottom w-full h-[40px]"></div>
         </div>
 
-        <section className="side-quest-bg mt-5 mx-3 md:mt-10 md:mx-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start side-quest-container">
-            <div className="relative px-5 py-10 md:px-10 flex flex-col justify-between">
-              <Link href="https://bit.ly/sidequestsubmission">
-                <div className="side-quest text-[27px] md:text-[40px]">
-                  <div>SIDE QUEST</div>
-                </div>
-                <div className="lihat-info-detail text-[19px] md:text-[28px]">
-                  <span>Klik untuk lihat info detail </span>
-                  <div className="fa-solid fa-angle-right"></div>
-                  <div>Juara Favorit</div>
-                  <p className="font-extrabold">Xiaomi Watch S1 Active</p>
-                </div>
-              </Link>
-            </div>
-            <div className="relative z-0 flex justify-center md:block">
-              <div className="w-60 h-60 md:absolute md:-top-10 md:right-0 md:w-[450px] md:h-[450px]">
-                <Image
-                  src="/images/side_quest.png"
-                  alt="Side Quest"
-                  layout="fill"
-                  objectFit="contain"
-                  className="object-contain md:-translate-y-14 md:translate-x-10"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
+        <SideQuest 
+          src="/images/side_quest.png" 
+          title="SIDE QUEST" 
+          subtitle1="Klik untuk lihat info detail " 
+          subtitle2="Juara Favorit" 
+          subtitle3="Xiaomi Watch S1 Active" 
+          subtitle4="" 
+          isWeekly={false}
+        />
 
-        <section className="side-quest-bg mt-10 mx-3 md:mt-20 md:mx-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start side-quest-container">
-            <div className="relative px-5 py-10 md:px-10 md:py-10 flex flex-col justify-between">
-              <div className="side-quest side-quest text-[27px] md:text-[40px]">
-                <div>WEEKLY QUEST JOURNEY</div>
-              </div>
-              <div className="lihat-info-detail text-[19px] md:text-[28px]">
-                <span>Updated every week !! </span>
-                <div>Juara Mingguan</div>
-                <div>Juara Favorit</div>
-                <p className="font-extrabold">Total Hadiah 10 Juta + Triv Merch</p>
-              </div>
-            </div>
-            <div className="relative z-0 flex justify-center md:block">
-              <div className="w-60 h-60 md:absolute md:-top-10 md:right-0 md:w-[450px] md:h-[450px]">
-                <Image
-                  src="/images/weekly_quest_journey.png"
-                  alt="Side Quest"
-                  layout="fill"
-                  objectFit="contain"
-                  className="object-contain md:-translate-y-14 md:translate-x-10"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
+        <SideQuest 
+          src="/images/weekly_quest_journey.png" 
+          title="WEEKLY QUEST JOURNEY" 
+          subtitle1="Updated every week !! " 
+          subtitle2="Juara Mingguan" 
+          subtitle3="Juara Favorit" 
+          subtitle4="Total Hadiah 10 Juta + Triv Merch" 
+          isWeekly={true}
+        />
       </div>
     </section>
   )
