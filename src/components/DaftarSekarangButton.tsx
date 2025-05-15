@@ -8,7 +8,7 @@ export type LinkButtonProps = {
 };
 
 export default function DaftarSekarangButton({ href, children, className = "" }: LinkButtonProps) {
-  const classes = `btn-daftar-sekarang block w-full md:inline-block md:w-auto text-center my-4 md:my-8 ${className}`
+  const classes = `btn-daftar-sekarang text-[18px] md:text-[24.5px] w-full md:inline-block md:w-auto text-center ${className}`
   
   return(
     <Link href={href} className={classes}>

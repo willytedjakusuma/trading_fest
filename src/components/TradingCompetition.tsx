@@ -27,7 +27,7 @@ export default function TradingCompetition() {
               <span className="calling-all-investor">Calling all investor and Trader Karena </span>
               <span className="semua-bisa-menang">#SemuaBisaMenang</span>
             </div>
-            <DaftarSekarangButton href="" className="text-[18px] md:text-[24.5px]">
+            <DaftarSekarangButton href="" className="block my-4 md:my-8">
               Daftar Sekarang
             </DaftarSekarangButton>
             <div className="periode-kompetisi">

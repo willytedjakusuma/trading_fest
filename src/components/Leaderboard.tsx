@@ -12,7 +12,7 @@ export default function Leaderboard() {
         percent: "Rp 27,5m"
       },
       order: "order-1 md:order-2",
-      key: "1",
+      altText: "Rank_1",
       imageClass: "md:-translate-y-36"
     },
     {
@@ -22,8 +22,8 @@ export default function Leaderboard() {
         percent: "Rp 20,9m"
       },
       order: "order-2 md:order-1 md:translate-y-16",
-      key: "2",
-      imageClass: "md:-translate-y-36"
+      altText: "Rank_2",
+      imageClass: "md:-translate-y-28"
     },
     {
       info: {
@@ -32,8 +32,8 @@ export default function Leaderboard() {
         percent: "Rp 5,8m"
       },
       order: "order-3 md:order-3 md:translate-y-24",
-      key: "3",
-      imageClass: "md:-translate-y-36"
+      altText: "Rank_3",
+      imageClass: "md:-translate-y-28"
     },
     
     
@@ -64,11 +64,11 @@ export default function Leaderboard() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 leaderboard-name px-4 pt-24 md:pt-48">
-          {leaderboards.map((leaderboard, index) => (
+          {leaderboards.map((leaderboard) => (
             <Podium 
               info={leaderboard.info} 
               order={leaderboard.order}
-              key={leaderboard.key} 
+              altText={leaderboard.altText} 
               imageClass={leaderboard.imageClass}
             />
           ))}

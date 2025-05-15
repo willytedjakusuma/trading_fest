@@ -13,15 +13,13 @@ type PodiumProps = {
   info: podiumInfo;
   order: string;
   imageClass: string;
-  key: string;
+  altText: string;
 };
 
-export default function Podium({ info, order, imageClass, key }: PodiumProps) {
+export default function Podium({ info, order, imageClass, altText }: PodiumProps) {
   const classname = `${order} card flex p-2 my-4 md:mx-16 md:relative grid grid-cols-2 md:grid-cols-1`
 
   const imageCustomClass = `${imageClass} rank !w-[80px] !h-[80px] my-4 md:!w-[166px] md:!h-[166px] md:overflow-visible`
-
-  const altText = `Rank_${key}`
   
   return(
     <div className={classname}>

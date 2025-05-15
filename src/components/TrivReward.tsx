@@ -59,6 +59,7 @@ export default function TrivReward() {
           subtitle3="Xiaomi Watch S1 Active" 
           subtitle4="" 
           isWeekly={false}
+          imageClass="w-[240px] h-[240px]"
         />
 
         <SideQuest 
@@ -69,6 +70,7 @@ export default function TrivReward() {
           subtitle3="Juara Favorit" 
           subtitle4="Total Hadiah 10 Juta + Triv Merch" 
           isWeekly={true}
+          imageClass="w-[240px] h-[240px] md:w-[450px] md:h-[450px]"
         />
       </div>
     </section>

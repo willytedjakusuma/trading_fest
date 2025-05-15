@@ -11,13 +11,17 @@ type SideQuestProps = {
   subtitle3: string;
   subtitle4: string;
   isWeekly: boolean;
+  imageClass: string;
 };
 
-export default function SideQuest({ src, title, subtitle1, subtitle2, subtitle3, subtitle4, isWeekly }: SideQuestProps) {
+export default function SideQuest({ src, title, subtitle1, subtitle2, subtitle3, subtitle4, isWeekly, imageClass }: SideQuestProps) {
+
+  const imageCustomClass = `${imageClass} md:absolute md:-top-16 md:right-0 md:w-[450px] md:h-[450px]`
+
   return (
-    <section className="side-quest-bg mt-20 mx-3 md:mt-10 md:mx-10">
+    <section className="side-quest-bg my-20 mx-3 md:p-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start side-quest-container">
-        <div className="relative px-10 pt-10 md:px-10 flex flex-col justify-between">
+        <div className="relative px-10 pt-10 md:pt-5 md:px-10 flex flex-col justify-between">
           <Link href="https://bit.ly/sidequestsubmission">
             <div className="side-quest text-[27px] md:text-[40px]">
               <div>{title}</div>
@@ -42,7 +46,7 @@ export default function SideQuest({ src, title, subtitle1, subtitle2, subtitle3,
           </Link>
         </div>
         <div className="relative z-0 flex justify-center md:block mx-6">
-          <div className="w-60 h-60 md:absolute md:-top-10 md:right-0 md:w-[450px] md:h-[450px]">
+          <div className={imageCustomClass}>
             <Image
               src={src}
               alt={title}
